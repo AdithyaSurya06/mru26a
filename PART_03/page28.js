@@ -24,3 +24,10 @@ console.log(newarray1)
 const result = numbers.find((number)=>number>1)
 console.log(result)
 
+//---reduce {reduces all to a single value}
+const res = numbers.reduce((sum,number)=>sum+number,0) //if it is empty array it shows error 
+console.log(res)                             //to determine it we use "0"
+
+//---spread {instead of push}
+const newarr = [...numbers,99] //add 99 at the end
+console.log(newarr)
